@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shopper Rewards | $750 Grocery Credit</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, .font-heading {
+            font-family: 'Poppins', sans-serif;
+        }
+        @keyframes float-bounce {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(2deg); }
+        }
+        .animate-float {
+            animation: float-bounce 3.5s ease-in-out infinite;
+        }
+        @keyframes pulse-emerald {
+            0%, 100% { transform: scale(1); box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.5); }
+            50% { transform: scale(1.02); box-shadow: 0 15px 40px -5px rgba(16, 185, 129, 0.8); }
+        }
+        .animate-pulse-emerald {
+            animation: pulse-emerald 2.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen h-screen flex flex-col justify-between overflow-x-hidden select-none">
+
+    <!-- Top Badge Header -->
+    <header class="w-full bg-slate-900/90 border-b border-slate-800/80 py-2.5 px-4 text-center shadow-sm">
+        <div class="max-w-md mx-auto flex items-center justify-center gap-2 text-xs font-bold text-emerald-400 tracking-wide uppercase">
+            <i data-lucide="shopping-bag" class="w-4 h-4"></i>
+            <span>US Shopper Savings Portal</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-1 flex flex-col items-center justify-center px-4 py-3 max-w-md mx-auto w-full">
+        
+        <!-- Header -->
+        <div class="text-center mb-3">
+            <span class="inline-flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-xs font-extrabold px-3 py-1 rounded-full mb-2">
+                <span class="w-2 h-2 bg-emerald-400 rounded-full animate-ping"></span>
+                Special Shopper Program
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
+                Get Your <span class="text-emerald-400">$750 Grocery</span> Credit
+            </h1>
+            <p class="text-slate-400 text-xs sm:text-sm mt-1">Pay for daily food, household goods & weekly shopping!</p>
+        </div>
+
+        <!-- Reward Hero Card -->
+        <div class="bg-gradient-to-b from-slate-900 to-slate-900/90 border border-slate-800/90 rounded-3xl p-5 sm:p-6 w-full shadow-2xl relative overflow-hidden backdrop-blur-md text-center">
+            
+            <!-- Graphic Floating Badge -->
+            <div class="relative mb-4 inline-block">
+                <div class="w-20 h-20 bg-gradient-to-tr from-emerald-500 via-teal-400 to-lime-300 rounded-2xl flex items-center justify-center mx-auto shadow-xl shadow-emerald-500/25 animate-float">
+                    <i data-lucide="shopping-cart" class="w-10 h-10 text-slate-950"></i>
+                </div>
+                <span class="absolute -bottom-2 -right-2 bg-amber-400 text-slate-950 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-md">
+                    $750 Value
+                </span>
+            </div>
+
+            <h2 class="text-2xl font-black text-white leading-snug">
+                Grocery Savings Reward
+            </h2>
+            <p class="text-slate-400 text-xs mt-0.5 mb-4">Valid for US residents on all devices</p>
+
+            <!-- 3-Step Process -->
+            <div class="bg-slate-950/80 border border-slate-800/80 rounded-2xl p-3.5 mb-5 text-left space-y-2.5 text-xs text-slate-200">
+                <div class="flex items-center gap-2.5">
+                    <span class="w-5 h-5 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-[11px] shrink-0">1</span>
+                    <span>Tap the green button to start</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <span class="w-5 h-5 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-[11px] shrink-0">2</span>
+                    <span>Submit your email address on the next page</span>
+                </div>
+                <div class="flex items-center gap-2.5">
+                    <span class="w-5 h-5 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center font-bold text-[11px] shrink-0">3</span>
+                    <span>Complete required sponsor tasks to claim</span>
+                </div>
+            </div>
+
+            <!-- Primary High-Converting CTA Link -->
+            <a href="https://www.af9m8trk.com/QLJ11S9T/THN11VQC/" 
+               target="_blank" 
+               rel="noopener sponsored" 
+               onclick="triggerConfetti()" 
+               class="animate-pulse-emerald w-full bg-gradient-to-r from-emerald-400 via-emerald-500 to-teal-400 hover:from-emerald-300 hover:to-teal-300 text-slate-950 font-black text-lg py-4 px-6 rounded-2xl flex items-center justify-center gap-2 uppercase tracking-wide transition-all transform active:scale-95 shadow-lg">
+                <span>Claim $750 Grocery Credit</span>
+                <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </a>
+
+        </div>
+
+        <!-- Trust Features -->
+        <div class="grid grid-cols-3 gap-2 w-full text-center mt-3 text-[11px] text-slate-400 font-medium">
+            <div class="bg-slate-900/50 border border-slate-800/60 rounded-xl py-2 px-1 flex flex-col items-center justify-center gap-1">
+                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-400"></i>
+                <span>Email Submit</span>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800/60 rounded-xl py-2 px-1 flex flex-col items-center justify-center gap-1">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+                <span>100% Free Entry</span>
+            </div>
+            <div class="bg-slate-900/50 border border-slate-800/60 rounded-xl py-2 px-1 flex flex-col items-center justify-center gap-1">
+                <i data-lucide="zap" class="w-4 h-4 text-emerald-400"></i>
+                <span>Fast Process</span>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer & Compliance -->
+    <footer class="border-t border-slate-800/60 bg-slate-950 py-3 px-4 text-center text-[10px] text-slate-500">
+        <div class="flex justify-center gap-3 mb-1 font-medium">
+            <a href="#" class="hover:underline hover:text-slate-400">Privacy Policy</a> |
+            <a href="#" class="hover:underline hover:text-slate-400">Terms & Conditions</a> |
+            <a href="#" class="hover:underline hover:text-slate-400">Program Rules</a>
+        </div>
+        <p class="max-w-xl mx-auto leading-relaxed opacity-70">
+            <strong>Disclaimer:</strong> This page is an independent promotional portal and is not affiliated with, sponsored by, or endorsed by any supermarket or grocery brand. Completion of required sponsor deals is mandatory to receive rewards.
+        </p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        // Render Icons
+        lucide.createIcons();
+
+        // Confetti Effect on Click
+        function triggerConfetti() {
+            confetti({
+                particleCount: 90,
+                spread: 80,
+                origin: { y: 0.7 }
+            });
+        }
+    </script>
+</body>
+</html>
